@@ -18,7 +18,6 @@ public class Main extends Frame implements MouseMotionListener, ActionListener {
         setTitle("Paint");
         setSize(600,500);
         setLayout(null);
-        setVisible(true);
 
         l=new Label();
         l.setBounds(50,50,80,50);
@@ -59,6 +58,9 @@ public class Main extends Frame implements MouseMotionListener, ActionListener {
         color.add(orange);
         color.add(cyan);
         mb.add(color);
+
+        setVisible(true);
+
         red.addActionListener(this);
         blue.addActionListener(this);
         green.addActionListener(this);
